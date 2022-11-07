@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 .bg-negro-antojitos {
     background-color: #0D0D0D;
 }
