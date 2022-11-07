@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.bg-negro-antojitos {
+    background-color: #0D0D0D;
+}
+
 h1, .h3, span, .footer-span {
     font-family: Oxygen-Regular, sans-serif;
     font-weight: bold;
