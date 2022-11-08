@@ -187,7 +187,7 @@ label {
     0%   {transform: translatex(0px)}
     25%  {transform: translatex(25%)}
     50%  {transform: translatex(50%)}
-    75%  {transform: translatex(75%)}
+    75%  {transform: translatex(75%)}   
     100% {transform: translatex(100%)}
 }
 
@@ -200,8 +200,8 @@ label {
     height: 45vh;
 }
 
-.gradient-contacto {
-    background-image: radial-gradient(rgb(0, 128, 0), rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.303), rgba(255, 0, 0, 0.914));
+.gradient {
+    background-image: radial-gradient(circle, #F2E3B6, #0f0f0f94, #0f0f0f);
 }
 
 .wapp-button {
