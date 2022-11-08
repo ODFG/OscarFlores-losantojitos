@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F2E3B6;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -25,9 +29,6 @@ h1, .h3, span, .footer-span {
  
 h2, h4, p, label {
     font-family: Oxygen-Regular, sans-serif;
-}
-body {
-    background-color: #F2E3B6;
 }
 
 h1, h2 {
