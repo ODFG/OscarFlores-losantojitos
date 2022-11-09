@@ -37,6 +37,10 @@ h1, h2 {
     margin-bottom: 1em;
 }
 
+.shadow {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
+}
+
 .menu-grid {
     padding: 10px;
     display: grid;
