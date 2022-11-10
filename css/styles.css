@@ -16,6 +16,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .bg-negro-antojitos {
@@ -263,9 +264,7 @@ footer {
     margin: 0px;
 }
 
-.carousel-item {
-    margin: 0px;
-}
+
 /* .grid-container {
     font-size: 1.5rem;
     text-align: center;
