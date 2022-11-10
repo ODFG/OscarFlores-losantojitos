@@ -38,7 +38,7 @@ h1, h2 {
 }
 
 .shadow {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
 }
 
 .menu-grid {
@@ -228,6 +228,7 @@ footer {
     background-color: #0d0d0d;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-top: 15px;
 }
 
 .footer-cosas {
@@ -266,18 +267,20 @@ footer {
 .carousel-item {
     margin: 0px;
 }
-/* .grid-container {
+.grid-container-menu {
     font-size: 1.5rem;
     text-align: center;
     height: 100vh;
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
+    "header header header header"
     "header header header header"
     "main main main aside"
     "main main main aside"
+    "article1 article2 article3 aside"
     "article1 article2 article3 aside"
     "section section section section"
     "footer footer footer footer" ;
@@ -285,7 +288,7 @@ footer {
     row-gap: .4em;
 }
 
-.header {
+.img1 {
     grid-area: header;
     background-color: lightblue;
 }
@@ -320,15 +323,32 @@ footer {
     background-color: lightpink;
 }
 
-.footer {
+.img8 {
     grid-area: footer;
-    background-color: #0D0D0D;
+    background-color: lightslategray
+}
+
+@media screen and (min-width: 577px) and (max-width: 920px) {
+    .grid-container-menu {
+        grid-template-columns: 2;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header main main"
+        "header header main main"
+        "header header main main"
+        "aside aside article1 article1"
+        "aside aside article1 article1"
+        "article2 article2 article3 article3"
+        "article2 article2 article3 article3"
+        "section section section section"  
+        "footer footer footer footer" ;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .grid-container {
+    .grid-container-menu {
         grid-template-columns: 1;
-        grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
         "header header header header"
         "main main main main"
@@ -340,18 +360,3 @@ footer {
         "footer footer footer footer" ;
     }
 }
-
-@media screen and (min-width: 577px) and (max-width: 920px) {
-    .grid-container {
-        grid-template-columns: 2;
-        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 1fr;
-        grid-template-areas: 
-        "header header header header"
-        "main main aside aside"
-        "main main aside aside"
-        "article1 article1 article1 article1"
-        "article2 article2 article3 article3"
-        "section section section section"  
-        "footer footer footer footer" ;
-    }
-} */
