@@ -73,6 +73,95 @@ article div img {
     }
 }
 
+.grid-containers {
+    text-align: center;
+    height: 100vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "main main main aside"
+    "main main main aside"
+    "article1 article2 article3 aside"
+    "section section section section"
+    "footer footer footer footer" ;
+    column-gap: .5em;
+    row-gap: .4em;
+}
+
+.navbars {
+    grid-area: navbar;
+    background-color: lightblue;
+}
+
+.main { 
+    grid-area: main;
+    background-color: lightcoral;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: lightcyan;
+}
+
+.article1 {
+    grid-area: article1;
+    background-color: lightgoldenrodyellow;
+}
+
+.article2 {
+    grid-area: article2;
+    background-color: lightgray;
+}
+
+.article3 {
+    grid-area: article3;
+    background-color: lightgreen;
+}
+
+.section {
+    grid-area: section;
+    background-color: lightpink;
+}
+
+.footers {
+    grid-area: footer;
+    background-color: lightsalmon;
+}
+
+@media screen and (max-width: 576px) {
+    .grid-containers {
+        grid-template-columns: 1;
+        grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
+        grid-template-areas: 
+        "navbar navbar navbar navbar"
+        "main main main main"
+        "aside aside aside aside"
+        "article1 article1 article1 article1"
+        "article2 article2 article2 article2"
+        "article3 article3 article3 article3"
+        "section section section section"
+        "footer footer footer footer" ; 
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 920px) {
+    .grid-containers {
+        grid-template-columns: 2;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: 
+        "navbar navbar navbar navbar"
+        "main main aside aside"
+        "main main aside aside"
+        "article1 article1 article1 article1"
+        "article2 article2 article3 article3"
+        "section section section section"  
+        "footer footer footer footer" ;
+    }
+}
+
 .horario-ubicacion {
     display: flex;
     flex-direction: row;
