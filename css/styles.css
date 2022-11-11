@@ -377,10 +377,10 @@ footer {
 
 .copyright-texto {
     color: #F2F2F2;
-    display: flex;  
-    justify-content: center;
+    text-align: center;
     font-family: Oxygen-Rgular, sans-serif;
     margin: 0px;
+    margin-top: .5rem;
 }
 
 /* 
