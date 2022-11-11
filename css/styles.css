@@ -308,12 +308,12 @@ fieldset {
 }
 
 .wapp-button {
-    width: 6em;
-    height: 6rem;
+    width: 3em;
+    height: 3rem;
     position: fixed;
     background-color: green;
-    bottom: 50px;
-    right: 30px;
+    bottom: 20px;
+    right: 10px;
     border-radius: 3em;
     display: flex;
     flex-direction: row;
@@ -322,8 +322,8 @@ fieldset {
 }
 
 .wapp-icon {
-    width: 5em;
-    height: 5rem;
+    width: 3em;
+    height: 3rem;
     background-color: green;
     border-radius: 3em;
     color: #F2F2F2;
