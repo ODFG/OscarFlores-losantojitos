@@ -74,91 +74,65 @@ article div img {
 }
 
 .grid-containers {
-    text-align: center;
-    height: 100vh;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: 
-    "navbar navbar navbar navbar"
-    "main main main aside"
-    "main main main aside"
-    "article1 article2 article3 aside"
-    "section section section section"
-    "footer footer footer footer" ;
+    "p p p img1"
+    "img2 img3 img4 aside" ;
     column-gap: .5em;
     row-gap: .4em;
-}
+}   
 
-.navbars {
-    grid-area: navbar;
-    background-color: lightblue;
-}
-
-.main { 
-    grid-area: main;
+.p { 
+    grid-area: p;
     background-color: lightcoral;
+    align-self: center;
+    padding: 20px 20px;
 }
 
-.aside {
-    grid-area: aside;
+.img1 {
+    grid-area: img1;
     background-color: lightcyan;
 }
 
-.article1 {
-    grid-area: article1;
+.img2 {
+    grid-area: img2;
     background-color: lightgoldenrodyellow;
 }
 
-.article2 {
-    grid-area: article2;
+.img3 {
+    grid-area: img3;
     background-color: lightgray;
 }
 
-.article3 {
-    grid-area: article3;
+.img4 {
+    grid-area: img4;
     background-color: lightgreen;
 }
 
-.section {
-    grid-area: section;
-    background-color: lightpink;
-}
-
-.footers {
-    grid-area: footer;
-    background-color: lightsalmon;
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .grid-containers {
-        grid-template-columns: 1;
-        grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
+        grid-template-columns: 2;
+        grid-template-rows: auto;
         grid-template-areas: 
-        "navbar navbar navbar navbar"
-        "main main main main"
-        "aside aside aside aside"
-        "article1 article1 article1 article1"
-        "article2 article2 article2 article2"
-        "article3 article3 article3 article3"
-        "section section section section"
-        "footer footer footer footer" ; 
+        "p p img1 img1"
+        "p p img1 img1"
+        "img2 img2 img2 img2"
+        "img3 img3 img4 img4";
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 920px) {
+@media screen and (min-width: 360px) and (max-width: 767px)  {
     .grid-containers {
-        grid-template-columns: 2;
-        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
         grid-template-areas: 
-        "navbar navbar navbar navbar"
-        "main main aside aside"
-        "main main aside aside"
-        "article1 article1 article1 article1"
-        "article2 article2 article3 article3"
-        "section section section section"  
-        "footer footer footer footer" ;
+        "p p p p"
+        "img1 img1 img1 img1"
+        "img2 img2 img2 img2"
+        "img3 img3 img3 img3"
+        "img4 img4 img4 img4" ; 
     }
 }
 
