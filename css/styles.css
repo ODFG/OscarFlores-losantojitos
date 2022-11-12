@@ -350,6 +350,16 @@ footer {
     margin-top: 15px;
 }
 
+.footer__informacion-a:hover, .footer__redes-a:hover {
+    opacity: 0.9;
+    color: #f2e3b6ac;
+}
+
+.footer__informacion-a:active, .footer__redes-a:active {
+    opacity: 0.9;
+    color: #f2e3b6ac;
+}
+
 .footer-cosas {
     display: flex;
     flex-direction: row;
