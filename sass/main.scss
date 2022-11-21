@@ -1,10 +1,14 @@
+    /* comentario */
+    // comentario no compila
+
+// vars
 @import 'vars';
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    .container-fluid {
-         
-    }
-}   
+// tags globales
+@import 'header';
+
+// pag interiores
+@import 'pages';
+
+// responsive
+@import 'media';

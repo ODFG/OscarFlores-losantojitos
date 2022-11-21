@@ -1,6 +1,111 @@
+/* comentario */
+@font-face {
+  font-family: Oxygen-Regular, sans-serif;
+  src: url(../assets/fonts/Oxygen-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2E3B6;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.bg-negro-antojitos {
+  background-color: #0d0d0d;
+}
+
+h1, .h3, span, .footer-span {
+  font-family: Oxygen-Regular, sans-serif;
+  font-weight: bold;
+}
+
+h2, h4, p, label {
+  font-family: Oxygen-Regular, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.gradient {
+  background-image: radial-gradient(circle, #F2E3B6, rgba(15, 15, 15, 0.5803921569), #0f0f0f);
+}
+
+.wapp-button {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  background-color: green;
+  bottom: 2rem;
+  right: 1rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wapp-button .wapp-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: green;
+  border-radius: 3rem;
+  color: #F2F2F2;
+}
+
+footer {
+  background-color: #0d0d0d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+footer .footer-cosas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footer-cosas .footer-informacion, footer .footer-cosas .footer-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-cosas .footer-informacion .footer-span, footer .footer-cosas .footer-redes .footer-span {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+footer .footer-cosas .footer-informacion .footer-span .footer__informacion-a, footer .footer-cosas .footer-informacion .footer-span .footer__redes-a, footer .footer-cosas .footer-redes .footer-span .footer__informacion-a, footer .footer-cosas .footer-redes .footer-span .footer__redes-a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 0.8em;
+  font-family: Oxygen-Regular, sans-serif;
+}
+
+.footer__informacion-a:hover, .footer__redes-a:hover {
+  opacity: 0.9;
+  color: rgba(242, 227, 182, 0.6745098039);
+}
+
+.footer__informacion-a:active, .footer__redes-a:active {
+  opacity: 0.9;
+  color: rgba(242, 227, 182, 0.6745098039);
+}
+
+.copyright-texto {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: Oxygen-Rgular, sans-serif;
+  margin: 0px;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
