@@ -12,3 +12,34 @@
 
 // responsive
 @import 'media';
+
+
+@mixin btn {
+    display: block;
+    margin-top: 1em;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    border-radius: 2em;
+    width: 10em;
+    height: 2em;
+    margin-left: 9em;
+    transition: height 2s; 
+}
+.button-pedido {
+    @include btn;
+    background-color: red;
+    &:hover {
+    opacity: 0.9;
+    font-weight: bold;
+    height: 3em;
+    }
+}
+.button-contacto { 
+    @include btn;
+    background-color: black;
+    &:hover {
+        opacity: 0.9;
+        font-weight: bold;
+        height: 3em;
+        }
+}

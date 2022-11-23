@@ -200,7 +200,7 @@ fieldset {
     color: black;
   }
 
-.button-pedido {
+/* .button-pedido {
     display: block;
     margin-top: 1em;
     background-color: #0D0D0D;  
@@ -217,7 +217,7 @@ fieldset {
     opacity: 0.9;
     font-weight: bold;
     height: 3em;
-}
+} */
 
 .button-pedido:active, .button-contacto:active {
     border-style: solid;
