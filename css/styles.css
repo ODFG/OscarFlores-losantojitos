@@ -226,7 +226,7 @@ fieldset {
     background-color: rgba(255, 0, 0, 0.859);
 }
 
-.button-contacto {
+/* .button-contacto {
     display: block;
     margin-top: 1em;
     background-color: #0D0D0D;
@@ -236,7 +236,7 @@ fieldset {
     height: 2em;
     margin-left: 9em;
     transition: height 2s;  
-}
+} */
 
 .arrow {
     margin-left: 30%;

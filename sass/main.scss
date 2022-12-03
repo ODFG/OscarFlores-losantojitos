@@ -27,7 +27,7 @@
 }
 .button-pedido {
     @include btn;
-    background-color: red;
+    background-color: black ;
     &:hover {
     opacity: 0.9;
     font-weight: bold;
