@@ -53,6 +53,10 @@ h1, h2 {
     align-items: center;
 }
 
+.precio {
+    font-weight: bold;
+}
+
 article div img {   
     width: 100%;
     height: auto;
