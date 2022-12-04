@@ -219,6 +219,10 @@ fieldset {
     height: 3em;
 } */
 
+.button-pedido {
+    background-color: #0D0D0D!important;
+}
+
 .button-pedido:active, .button-contacto:active {
     border-style: solid;
     border-width: .2em;
