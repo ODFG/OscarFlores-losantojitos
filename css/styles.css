@@ -69,6 +69,14 @@ h1, h2 {
     font-weight: bold;
 }
 
+.card-body {
+    height: 125px;
+}
+
+.ima {
+    height: 400px;
+}
+
 article div img {   
     width: 100%;
     height: auto;
@@ -86,69 +94,6 @@ article div img {
     .menu-grid {
         grid-template-columns: 1fr;    
         grid-template-rows: 1fr 1fr 1fr;
-    }
-}
-
-.grid-containers {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: 
-    "p p p img1"
-    "img2 img3 img4 aside" ;
-    column-gap: .5em;
-    row-gap: .4em;
-}   
-
-.p { 
-    grid-area: p;
-    background-color: lightcoral;
-    align-self: center;
-    padding: 20px 20px;
-}
-
-.img1 {
-    grid-area: img1;
-    background-color: lightcyan;
-}
-
-.img2 {
-    grid-area: img2;
-    background-color: lightgoldenrodyellow;
-}
-
-.img3 {
-    grid-area: img3;
-    background-color: lightgray;
-}
-
-.img4 {
-    grid-area: img4;
-    background-color: lightgreen;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .grid-containers {
-        grid-template-columns: 2;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "p p img1 img1"
-        "p p img1 img1"
-        "img2 img2 img2 img2"
-        "img3 img3 img4 img4";
-    }
-}
-
-@media screen and (min-width: 360px) and (max-width: 767px)  {
-    .grid-containers {
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "p p p p"
-        "img1 img1 img1 img1"
-        "img2 img2 img2 img2"
-        "img3 img3 img3 img3"
-        "img4 img4 img4 img4" ; 
     }
 }
 
@@ -350,6 +295,68 @@ footer {
 
 
 
+/* .grid-containers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    "p p p img1"
+    "img2 img3 img4 aside" ;
+    column-gap: .5em;
+    row-gap: .4em;
+}   
+
+.p { 
+    grid-area: p;
+    background-color: lightcoral;
+    align-self: center;
+    padding: 20px 20px;
+}
+
+.img1 {
+    grid-area: img1;
+    background-color: lightcyan;
+}
+
+.img2 {
+    grid-area: img2;
+    background-color: lightgoldenrodyellow;
+}
+
+.img3 {
+    grid-area: img3;
+    background-color: lightgray;
+}
+
+.img4 {
+    grid-area: img4;
+    background-color: lightgreen;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-containers {
+        grid-template-columns: 2;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "p p img1 img1"
+        "p p img1 img1"
+        "img2 img2 img2 img2"
+        "img3 img3 img4 img4";
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px)  {
+    .grid-containers {
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "p p p p"
+        "img1 img1 img1 img1"
+        "img2 img2 img2 img2"
+        "img3 img3 img3 img3"
+        "img4 img4 img4 img4" ; 
+    }
+} */
 
 
 /* .arrow {
